@@ -36,3 +36,5 @@ Because of the second reason, no Destinations may share exactly the same calenda
 Opening the app by sharing an address with it should, for each Destination, show the latest possible departure time (incl. walking to the first public transport stop), the actual arrival time (incl. walking from the last stop to the target address), and the target address itself.
 
 (There are very few Strings so far: basically just the app name, a text field hint, an error message, two frankly unnecessary labels and two invisible content descriptions for buttons.)
+
+(The tag "housing" is because I wrote this so as to make hunting for housing close enough in terms of public transport to both work and friends easier.)
