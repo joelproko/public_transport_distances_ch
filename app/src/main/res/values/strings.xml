@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DistanzenPerÖV</string>
+    <string name="addButton">Ziel hinzufügen</string>
+    <string name="hint_DestinationAddress">Zieladresse…</string>
+    <string name="button_save">Speichern</string>
+    <string name="toast_addressMissing">Adresse fehlt</string>
+    <string name="scrTimeLabel">ab:</string>
+    <string name="arrTimeLabel">an:</string>
+</resources>

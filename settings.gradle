@@ -1,0 +1,2 @@
+rootProject.name = "DistanzenPerÖV"
+include ':app'
