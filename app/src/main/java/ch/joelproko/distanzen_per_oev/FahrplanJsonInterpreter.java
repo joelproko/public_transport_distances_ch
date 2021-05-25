@@ -82,7 +82,7 @@ public class FahrplanJsonInterpreter {
         synchronized (departureDataList) {
             TreeSet<DepartureData> currentList = departureDataList.getValue();
             currentList.add(d);
-            departureDataList.setValue(currentList);
+            departureDataList.postValue(currentList);
         }
     }
 }
