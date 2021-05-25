@@ -22,7 +22,7 @@ public class DistanceListAdapter  extends ListAdapter<DepartureData, DistanceVie
         DepartureData current = getItem(position);
         String srcDateTime = current.srcTime;
         String arrDateTime = current.arrTime;
-        holder.bind(current.srcAddr, srcDateTime,arrDateTime);
+        holder.bind(current.destAddr, srcDateTime,arrDateTime);
     }
     static class DepartureDiff extends DiffUtil.ItemCallback<DepartureData> {
 
@@ -33,7 +33,7 @@ public class DistanceListAdapter  extends ListAdapter<DepartureData, DistanceVie
 
         @Override
         public boolean areContentsTheSame(@NonNull DepartureData oldItem, @NonNull DepartureData newItem) {
-            return oldItem.srcTime.equals(newItem.srcTime) && oldItem.arrTime.equals(oldItem.arrTime) && oldItem.srcAddr.equals(newItem.srcAddr);
+            return oldItem.srcTime.equals(newItem.srcTime) && oldItem.arrTime.equals(oldItem.arrTime) && oldItem.destAddr.equals(newItem.destAddr);
         }
     }
 }

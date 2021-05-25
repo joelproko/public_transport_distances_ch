@@ -75,10 +75,10 @@ public class FahrplanJsonInterpreter {
         Collections.sort(closestDates);
         JSONObject connection = connections.getJSONObject(closestDates.get(0).position);
         DepartureData d = new DepartureData();
-        d.srcAddr = connection.getString("from");
+        d.destAddr = connection.getString("to");
         d.srcTime = connection.getString("departure");
         d.arrTime = connection.getString("arrival");
-        d.date = closestDates.get(0).date;
+        d.date = exactDateTimes.get(closestDates.get(0).destinationIndex);
         synchronized (departureDataList) {
             TreeSet<DepartureData> currentList = departureDataList.getValue();
             currentList.add(d);

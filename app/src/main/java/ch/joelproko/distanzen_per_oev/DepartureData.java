@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Objects;
 
 public class DepartureData implements Comparable<DepartureData> {
-    public String srcAddr;
+    public String destAddr;
     public String srcTime;
     public String arrTime;
     public Long date;
